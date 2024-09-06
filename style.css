@@ -11,16 +11,18 @@ body {
 .header, .footer {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     background-color: #1F2937;
     padding: 16px;
+    color: #F9FAF8;
 }
 
-.footer{
-    color: #F9FAF8;
+.logodiv {
+    display: flex;
+    justify-content: space-around;
 }
 
 .logo {
-    color: #F9FAF8;
     font-size: 24px;
 }
 
@@ -38,23 +40,48 @@ ul, .logo {
 
 a {
     text-decoration: none;
-    color: rgb(206, 190, 190);
+    color: #e5e7eb;
 }
 
-.hero-div {
-    display:flex;
-    justify-content: space-around;
-
+.super-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px;
 }
 
 .hero {
     display: flex;
-    padding: 16px; /*still have to decide wether to use margin or padding to space elements*/
+    margin-right: 40px; /*still have to decide wether to use margin or padding to space elements*/
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     width: 400px;
+    height: 200px;
+}
+
+button {
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 8px 28px;
+    border-radius: 8px;
+    background: #3882F6;
+    border: 1px solid #3882F6;
+    color: white;
+    font-weight: bold;
+}
+
+#hero-image {
+    width: 500px;
+    height: 200px;
 }
 
 #main-text {
     font-size: 48px;
     font-weight: 900;
+    margin: 0;
+}
+
+#sub-text {
+    margin: 0;
 }
